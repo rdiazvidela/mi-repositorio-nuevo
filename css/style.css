@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Oswald:wght@300;400;700&display=swap');
+
+/*
+'Oswald', sans-serif;
+'Homemade Apple', cursive;
+
+Paleta de colores
+003049 azul
+D62828 rojo
+F77F00 naranja
+FCBF49 naranja claro
+EAE2B7 cremita
+*/
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+header{
+    width: 100%;
+    background-color: #003049;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav{
+    width: 100%;
+    padding-top: 30px;
+}
+
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+}
+.NavBar li a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-family: Oswald, sans-serif;
+    color: #FCBF49
+}
+
+/* INDEX Main **/
+
+main{
+    width: 100%;
+    height: 900px;
+    background-image: url(../assets/img/textura\ main.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+}
+
+h1{
+    color: #D62828;
+    padding-top: 70px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 120%;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h3{
+    color: #003049;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.gridInicio{
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+
+"imgskate imgskate imgskate logo slogan slogan"
+"imgskate imgskate imgskate logo slogan slogan"
+"imgskate imgskate imgskate none subtitulo subtitulo"
+"imgskate imgskate imgskate none subtitulo subtitulo"
+
+    
+}
+.item-1{
+    grid-area: imgskate;
+    place-self: center;
+
+}
+.item-1 img{
+    margin-top: 180px;
+    margin-left: 150px;
+}
+
+.item-2{
+    grid-area: logo;
+}
+
+.item-2 img{
+    margin-right: 20px;
+}
+
+.item-3{
+    grid-area: slogan;
+}
+
+.item-4{
+    grid-area: subtitulo;
+    
+
+}
+
+/* Main valores institucionales **/
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 120%;
+    color: #F77F00;
+}
+
+p{
+    font-family:'Oswald', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    color:#002336
+
+}
+.valoresInsti{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    mix-blend-mode: multiply;
+
+}
+
+.valor1{
+    text-align: center;
+    mix-blend-mode: multiply;
+
+}
+
+.valor2{
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+.valor3{
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+.valor4{
+    text-align: center;
+    mix-blend-mode: multiply;
+}
+
+
+
+/* CREW Main **/
+
+.gridCrew{
+    display: grid;
+    width: 100%;
+    gap: 10px 20px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 200px 300px 100px 100px 100px;
+    grid-template-areas:
+
+    "item1 item1 item1 item1 item1"
+    "item2 item3 item3 item4 item4"
+    "item2 item3 item3 item5 item5"
+    "item2 none none item5 item5"
+    "item2 item6 item6 item6 item6";
+
+    justify-content: center;
+    align-content: center;
+}
+
+.item1{
+    width: 100%;
+    grid-area: item1;
+
+}
+
+.item2{
+
+    grid-area: item2;
+
+}
+.item3{
+    grid-area: item3;
+}
+
+.item3 h2{
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+.item3 p{
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.item4{
+    grid-area: item4;
+}
+.item4 p{
+    margin-top: 80px;
+    font-size: 23px;
+    color: #D62828;
+    margin-right: 5px;
+}
+
+.item5{
+
+    grid-area: item5;
+}
+
+.item5 ul li{
+    display: inline-block;
+}
+
+
+.item6{
+    grid-area: item6;
+}
+
+
+
+/* COMUNIDAD Main **/
+
+/* CONTACTO Main **/
+
+.txtcontacto{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+
+.formulario{
+    position: absolute;
+}
+form{
+    background-color: #EAE2B7;
+    border-radius: 10px;
+    color: #003049;
+    padding: 10px;
+    margin-top: 250px;
+    margin-left: 50px;
+    width: 300px;
+    font-family: 'Oswald', sans-serif;
+}
+.fotogrupalcontacto{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+/* INDEX Footer **/
+
+.Redes-footer{
+    position: absolute;
+    margin-top: 20px;
+}
+.Redes-footer ul li{
+
+    display: inline-block;
+}
+
+h5{
+    text-align: center;
+    margin-top: 60px;
+    font-family:'Oswald', sans-serif;
+    font-weight: lighter;
+    color: white;
+
+}
+
+.footer{
+    display: flex;
+    background-color: #003049;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around
+
+}
+
+/* Inicio Media **/
+
+/* INDEX**/
+
+@media (max-width: 768px){
+
+    header{
+        width: 100%;
+        background-color: #FCBF49
+    }
+    .logoInicio{
+        display: none;
+    }
+
+    .NavBar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .NavBar li a{
+        color: #003049;
+    }
+
+    .item-1{
+        display: none;
+    
+    }
+    .item-4{
+        align-items: center;
+        text-align: center;
+    }
+    
+    main{
+        width: 100%;
+        height: 1000px;
+        background-image: url(../assets/img/textura\ main.jpg);
+        background-repeat: repeat-y;
+        mix-blend-mode: multiply;
+    }
+
+    h1{
+        font-size: 20px;
+
+    }
+    
+
+    .gridInicio{
+        display: grid;
+        width: 100%;
+        gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+
+        "none logo slogan slogan slogan"
+        "none logo slogan slogan slogan"
+        "subtitulo subtitulo subtitulo subtitulo subtitulo"
+    }
+
+/* CREW**/
+
+
+.gridCrew{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 300px 100px 100px 100px;
+    grid-template-areas:
+
+    "item1 item1 item1"
+    "item3 item3 none"
+    "item3 item3 none"
+
+
+}
+.item2{
+    display: none;
+}
+
+.item3{
+    align-items: center;
+    text-align: center;
+}
+.item4{
+    display: none;
+}
+
+.item5{
+    display: none;
+
+}
+}
+
+@media (max-width:320px){
+
+    .item-1{
+        display: none;
+    }
+
+/* me gustaria que aparezca este logo ITEM-2 en la vista Mobile, 
+pero no logré que se posicione en columna como el h1 y demas elementos, sin que desarme todo**/
+
+    .item-2{
+        display: none;
+    }
+
+    h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 10px;
+        text-align: center
+    }
+
+    main{
+        width: 100%;
+        height: 1600px
+
+
+    }
+    .gridInicio{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+
+        "slogan"
+        "subtitulo"
+    }
+
+.logo1{
+    display: none;
+}
+
+.logo2{
+    display: none;
+}
+
+.logo3{
+    display: none;
+}
+.logo4{
+    display: none;
+}
+h5{
+    font-size: smaller;
+}
+}
